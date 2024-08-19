@@ -19,19 +19,23 @@ while True:
             file.writelines(todos)                      # Write the lines to the file
             file.close()                                # Close
         case 'show':
+            file = open('todos.txt' , 'r')              # To read all the data from file and display it
+            todos = file.readlines()
+            file.close()
+           
             for index , value in enumerate(todos):
                 row = f"{index + 1}-{value.title()}"
-                print(row)
+                print(row , end='')
         case 'edit':
             number = int(input("Enter number of To Do in list to Edit : "))
-            number -= 1                        # list indexing start from 0
+            number -= 1                                 # list indexing start from 0
             todos[number] = input("Enter the new To Do : ")
-        case 'complete':                       #  Complete Feature using pop method 
+        case 'complete':                                #  Complete Feature using pop method 
             number = int(input("Enter number of To Do in list to Complete : "))
             todos.pop(number - 1)
         case 'exit':
             break
         case _:
-            print("Try Again Incorrect option\n")
+            print("Try Again Incorrect option")
     
 print("Bye___")
