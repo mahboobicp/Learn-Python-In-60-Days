@@ -8,5 +8,5 @@
     - Else
     - Dictioneries
 
-# Improve user add Feature with if , elif and else statement
+# Improve code by adding Feature with if , elif and else statement
 ___
