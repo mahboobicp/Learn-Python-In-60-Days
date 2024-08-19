@@ -1,8 +1,7 @@
 #  Module # 01
-## Section # 06
-### Day : 05
+## Section # 07
+### Day : 06
 *** 
 #### App 01 : To Do Application with
-    - Enumeration
-    - f String
+    - Working with Text File
 ___

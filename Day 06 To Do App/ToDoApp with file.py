@@ -1,7 +1,4 @@
-# Enumeration and String Formating using f string
-# Enumerate function return index of value in list
-# Add Complete feature to list to remove the completed task from the list
-todos = []
+# In this exercise we will work with files to save the user input data
 while True:
     print("***"*10)
     uaction = input("Enter add , show , edit , complete or exit : ")
@@ -10,8 +7,17 @@ while True:
     print("***"*10)
     match user_action:
         case 'add':
-            todo = input("Enter To Do : ")
-            todos.append(todo)
+            todo = input("Enter To Do : ") + '\n'
+
+            file = open('todos.txt' , 'r')              # Will open the file in read mode
+            todos = file.readlines()                    # Read all the line from the file and return as list
+            file.close()                                # After reading the data close the file
+            
+            todos.append(todo)                          # Add the user input to the list
+            
+            file = open('todos.txt' , 'w')              # Open the file in write mode for writing the new input
+            file.writelines(todos)                      # Write the lines to the file
+            file.close()                                # Close
         case 'show':
             for index , value in enumerate(todos):
                 row = f"{index + 1}-{value.title()}"
@@ -25,5 +31,7 @@ while True:
             todos.pop(number - 1)
         case 'exit':
             break
+        case _:
+            print("Try Again Incorrect option\n")
     
 print("Bye___")
