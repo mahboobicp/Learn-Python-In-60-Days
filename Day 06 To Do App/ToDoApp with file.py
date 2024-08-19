@@ -5,21 +5,22 @@ while True:
     user_action = uaction.lower()
     user_action = user_action.strip()        # Remove The spaces
     print("***"*10)
+    path = r"D:\Python\Learn-Python-In-60-Days\Day 06 To Do App\todos.txt"
     match user_action:
         case 'add':
             todo = input("Enter To Do : ") + '\n'
 
-            file = open('todos.txt' , 'r')              # Will open the file in read mode
+            file = open(path , 'r')                     # Will open the file in read mode
             todos = file.readlines()                    # Read all the line from the file and return as list
             file.close()                                # After reading the data close the file
             
             todos.append(todo)                          # Add the user input to the list
             
-            file = open('todos.txt' , 'w')              # Open the file in write mode for writing the new input
+            file = open(path , 'w')                     # Open the file in write mode for writing the new input
             file.writelines(todos)                      # Write the lines to the file
             file.close()                                # Close
         case 'show':
-            file = open('todos.txt' , 'r')              # To read all the data from file and display it
+            file = open(path , 'r')                     # To read all the data from file and display it
             todos = file.readlines()
             file.close()
            
