@@ -1,5 +1,4 @@
-while True:
-    
+while True:    
     uaction = input("Enter add , show , edit , complete or exit : ")
     user_action = uaction.lower()
     user_action = user_action.strip()       
