@@ -5,7 +5,7 @@ while True:
     user_action = uaction.lower()
     user_action = user_action.strip()        # Remove The spaces
     print("***"*10)
-    path = r"D:\Learn Python in 60 Days\Day 08 To Do App\todos.txt"
+    path = r"D:\Python\Learn-Python-In-60-Days\Day 09 To Do App\todos.txt"
     match user_action:
         case 'add':
             todo = input("Enter To Do : ") + '\n'
@@ -32,7 +32,8 @@ while True:
             print(todos)    
             new_todos = input("Enter the new To Do : ")
             todos[number] =  new_todos+'\n'
-            print(todos)
+            remove_todo = todos[number]
+            print(f"New To Do : {new_todos} Removed : {remove_todo}")
             with open(path , 'w') as file:
                 file.writelines(todos)
             
