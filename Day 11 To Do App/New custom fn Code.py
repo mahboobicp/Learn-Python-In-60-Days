@@ -8,7 +8,7 @@ while True:
     uaction = input("\nEnter add, show, edit, complete or exit: ")
     user_action = uaction.lower()
     user_action = user_action.strip()       
-    path = r"D:\Learn Python in 60 Days\Files\todos.txt"
+    path = r"D:\Python\Learn-Python-In-60-Days\Files\todos.txt"
     
     if 'add' in user_action or 'new' in user_action:   # Boolean Operator or , and , Not in
         todo = user_action[4:]
