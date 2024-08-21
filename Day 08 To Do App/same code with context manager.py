@@ -19,7 +19,7 @@ while True:
         case 'show':
             with open(path , 'r') as file:
                 todos = file.readlines()
-            new_todos =[item for item in todos] # Do the same with List Comprehensioin
+            new_todos =[item for item in todos]             # Do the same with List Comprehensioin
             for index , value in enumerate(new_todos):      # The same can be done with direct method using print(row,end='')
             #   value = value.strip('\n')                   # same result can be achived with this
                 row = f"{index + 1}-{value.title()}"
