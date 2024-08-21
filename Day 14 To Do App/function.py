@@ -13,3 +13,8 @@ def write_todos(todo_list, path_local=r"D:\Learn Python in 60 Days\Files\todos.t
      2. File path """
     with open(path_local , 'w') as file:
             file.writelines(todo_list)
+
+
+#print(__name__)
+if __name__ == "__main__":
+     print("Main")
