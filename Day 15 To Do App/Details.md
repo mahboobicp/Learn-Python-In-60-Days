@@ -1,9 +1,9 @@
 #  Module # 01
-## Section # 16
-### Day : 15
+## Section # 17
+### Day : 16
 *** 
 #### App 01 : To Do Application with
-    - Stanadard module and Git
+    - Other module and Github
 
 # Improve code by adding Feature with custom function
 ___
