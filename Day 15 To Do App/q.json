@@ -1,0 +1,6 @@
+[{"question" : "What does CPU stand for in computing?",
+"choice" : ["Central Processing Unit","Central Programming Unit","Computer Personal Unit","Control Processing Unit"],
+"correct": 1},
+{"question" : "Which of the following is an example of an input device?",
+"choice" : ["Monitor","Printer","Keyboard","Speaker"],
+"correct" : 3}]
