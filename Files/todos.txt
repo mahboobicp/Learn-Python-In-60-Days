@@ -1,13 +1,6 @@
 start
-Update edit
-ghowal khori
-pakistan
-fine
-new folder
-use of start with function
-function
-function with args
-issue
-default arg
-test
-documentation feature
+pakistanpk
+uk
+ok
+as
+no
