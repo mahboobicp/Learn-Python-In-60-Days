@@ -1,9 +1,9 @@
-import zipfile
+import zipfile as zp
 import pathlib
 
 def make_archive(filepaths,dest_dir):
     dest_path = pathlib.Path(dest_dir,"compressed.zip")
-    with zipfile.ZipFile(dest_dir,'w') as archive:
-        #filepath = pathlib.Path(filepath)
+    with zp.ZipFile(dest_path,'w') as archive:
         for filepath in filepaths:
-            archive.write(filepath)
+            filepath = pathlib.Path(filepath)
+            archive.write(filepath, arcname=filepath.name)
