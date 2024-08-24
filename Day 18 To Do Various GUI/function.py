@@ -1,4 +1,4 @@
-FILEPATH = r"D:\Learn Python in 60 Days\Files\todos.txt"
+FILEPATH = r"todos.txt"
 """ import time
 now = time.strftime("%b %d, %Y %H : %M : %S")
 print("***"*20)
