@@ -20,4 +20,11 @@ for filepath in filepaths:
     pdf.set_font(family="Times",size=16,style="B")
     pdf.cell(w=50,h=1,txt=name,ln=1)
 
+    # Get the content of each file
+    with open(filepath,"r") as file:
+        content = file.read()
+    # Add the text File content to PDF
+    pdf.set_font(family="Times",size=12)
+    pdf.multi_cell(w=0,h=6,txt=content)
+
 pdf.output("animal.pdf")
